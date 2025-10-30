@@ -1,0 +1,211 @@
+<html>
+    <head>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script src="js/bootstrap.bundle.min.js" rel="stylesheet"></script>
+
+        <style>
+            .flip-card {
+            perspective: 1000px;
+            }
+            .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+            }
+            .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+            }
+            .flip-card-front,
+            .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            }
+            .flip-card-front {
+            background-color: #f8f9fa;
+            }
+            .flip-card-back {
+            background-color: #6f42c1;
+            color: white;
+            transform: rotateY(180deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Cards
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+            <div class="container">
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front card shadow">
+              <img src="img1.jpg" class="card-img-top" alt="Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Card 1</h5>
+                <p class="card-text">Front side content.</p>
+              </div>
+            </div>
+            <div class="flip-card-back card shadow d-flex flex-column justify-content-center align-items-center">
+              <h5 class="card-title">Back Side</h5>
+              <p class="card-text">More details about card 1.</p>
+              <a href="#" class="btn btn-light">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front card shadow">
+              <img src="img2.jpg" class="card-img-top" alt="Image 2">
+              <div class="card-body">
+                <h5 class="card-title">Card 2</h5>
+                <p class="card-text">Front side content.</p>
+              </div>
+            </div>
+            <div class="flip-card-back card shadow d-flex flex-column justify-content-center align-items-center">
+              <h5 class="card-title">Back Side</h5>
+              <p class="card-text">More details about card 2.</p>
+              <a href="#" class="btn btn-light">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front card shadow">
+              <img src="img3.jpg" class="card-img-top" alt="Image 3">
+              <div class="card-body">
+                <h5 class="card-title">Card 3</h5>
+                <p class="card-text">Front side content.</p>
+              </div>
+            </div>
+            <div class="flip-card-back card shadow d-flex flex-column justify-content-center align-items-center">
+              <h5 class="card-title">Back Side</h5>
+              <p class="card-text">More details about card 3.</p>
+              <a href="#" class="btn btn-light">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front card shadow">
+              <img src="img4.jpg" class="card-img-top" alt="Image 4">
+              <div class="card-body">
+                <h5 class="card-title">Card 4</h5>
+                <p class="card-text">Front side content.</p>
+              </div>
+            </div>
+            <div class="flip-card-back card shadow d-flex flex-column justify-content-center align-items-center">
+              <h5 class="card-title">Back Side</h5>
+              <p class="card-text">More details about card 4.</p>
+              <a href="#" class="btn btn-light">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Alerts
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div class="alert alert-success" role="alert">
+        A simple success alert—check it out!
+        </div>
+        <div class="alert alert-warning" role="alert">
+        A simple warning alert—check it out!
+        </div>   
+        <div class="alert alert-danger" role="alert">
+        A simple danger alert—check it out!
+        </div>
+        <div class="alert alert-info" role="alert">
+        A simple info alert—check it out!
+        </div>     
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Buttons
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>      
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        Table
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <table class="table">
+        <thead style="background-color: black; color: white;">
+            <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <th scope="row">1</th>
+            <td>Alice</td>
+            <td>alice@example.com</td>
+            </tr>
+            <tr>
+            <th scope="row">2</th>
+            <td>Bob</td>
+            <td>bob@example.com</td>
+            </tr>
+             <tr>
+            <th scope="row">3</th>
+            <td>Carry</td>
+            <td>carry@example.com</td>
+            </tr>
+            <tr>
+            <th scope="row">4</th>
+            <td>Daniel</td>
+            <td>daniel@example.com</td>
+            </tr>
+        </tbody>
+        </table>      
+      </div>
+    </div>
+  </div>
+</div>
+    </body>
+</html>
